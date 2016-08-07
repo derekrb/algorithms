@@ -39,6 +39,4 @@ class Algorithm(algorithm.Algorithm):
         return i - 1
 
     def create_input(self, n):
-        arr = range(n)
-        random.shuffle(arr)
-        return arr
+        return self.make_shuffled_sequence(n)

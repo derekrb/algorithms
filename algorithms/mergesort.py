@@ -27,9 +27,7 @@ class Algorithm(algorithm.Algorithm):
         return self.merge(a, b, key)
 
     def create_input(self, n):
-        arr = range(n)
-        random.shuffle(arr)
-        return arr
+        return self.make_shuffled_sequence(n)
 
     def merge(self, a, b, key):
         c = []
